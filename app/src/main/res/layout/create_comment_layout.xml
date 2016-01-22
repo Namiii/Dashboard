@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/fab_margin"
+        android:text="@string/name"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp" />
+
+
+    <EditText
+        android:id="@+id/create_comment_name_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textColor="@color/etTextColor"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/fab_margin"
+        android:text="@string/comment"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp" />
+
+
+    <EditText
+        android:id="@+id/create_comment_text_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:imeOptions="actionDone"
+        android:gravity="left|top"
+        android:textColor="@color/etTextColor"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/create_comment_cancel_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/buttons_margin"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/cancel_button_text"
+            android:textColor="@color/buttonTextColor" />
+
+        <Button
+            android:id="@+id/create_comment_ok_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/buttons_margin"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/ok_button_text"
+            android:textColor="@color/buttonTextColor" />
+
+    </LinearLayout>
+</LinearLayout>
